@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Wedding</title>
+    <link rel="stylesheet" href="C:\Users\Home\Desktop\demo1.css">
+
+    <style>
+
+        .image-container img {
+            width: 130%;
+            height: 110%;
+            display: none; /* Hide all images initially */
+        }
+
+        .image-container img.active {
+            display: block; /* Show the active image */
+            padding: 80px;
+        }
+
+        .text-container {
+            padding: 140px;
+        }
+        h1{
+            color: rgb(216, 216, 24);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        p{
+            color: white;
+        }
+        .content-writing-box {
+            
+            border-radius: 30px; /* Rounded corners */
+            padding: 60px;
+            background-color: black; /* Background color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+            margin: 50px 0;
+            height: 20%;
+            width: 80%;
+            
+        }
+
+       
+
+        .content-writing-box h3 {
+            
+            color:rgb(243, 243, 26); /* Text color */
+        }
+            h5{
+             color:white;
+        }
+            h1{
+                color: yellow;
+                text-align: left;
+            }
+        
+      
+
+        .content-writing-box a {
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 40px;
+            padding: 10px;
+    
+        }
+        table {
+            border-collapse: separate; /* Important for spacing */
+            border-spacing: 0 12px; /* Adds vertical spacing between rows (headings and data) */
+            width: 100%;
+        }
+       
+             /* Remove all borders from the table */
+        table, th, td {
+            border: none;
+        }
+
+      
+        .center-box {
+            width: 80%; /* Define the box width */
+            height: 40%; /* Define the box height */
+            background-color: black; /* Background color (Bootstrap primary color) */
+            color: white; /* Text color */
+            display: flex;
+        }
+        .A{
+            height:100%;
+            width: 100%;
+            background-image:url(https://img.freepik.com/premium-photo/abstract-shadowy-textures-subtle-highlights-luminescence-seep-through-dark-background_764067-9315.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        
+        
+        }
+        .B{
+            height: 100%;
+            width: 100%;
+            background-color: rgb(235, 181, 6);
+        }
+        .C{
+            height: 100%;
+            width: 100%;
+            background-color: rgb(65, 63, 63);
+            padding: 30px;
+            h1{
+                color: rgb(221, 207, 14);
+                text-align: left;
+            }
+            h4{
+                color: white;
+            }
+            table{
+                color: white;
+                background-color: black;
+            }
+            th{
+                background-color: rgb(26, 24, 24);
+                text-align: center;
+            }
+            td{
+                text-align: center;
+            }
+            .card2{
+                padding: 50px;
+            }
+            
+        }
+        .D{
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            padding: 30px;
+            h2{
+                color: yellow;
+            }
+            h5{
+                color: white;
+            }
+            h4{
+                color: white;
+            }
+            .vertical-center {
+                display: flex;
+                align-items: center;
+
+            }
+            .card{
+                height: 78%;
+                width: 100%;
+            }
+            ul{
+                text-align: left;
+            }
+            ul.circle-bullets {
+                list-style-type: circle;
+                color: white;
+            }
+
+        }
+        
+        
+    </style>
+
+
+  </head>
+  <body >
+      
+ <div class="A">    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'menu' %}"><i class="glyphicon glyphicon-menu-hamburger"></i></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item">
+                       <button><a class="nav-link" href="{% url 'Sign' %}"><b>Sign In</b></a></button>
+                    </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <button><a class="nav-link" href="{% url 'regist' %}"><b>Sign Up</b></a></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="row">
+            <!-- Left side: Text section -->
+            <div class="col-md-6 text-container">
+                <h1><b>Your Dream
+                    <br>
+                    Wedding
+                    <br>
+                    Awaits</b>
+                </h1>
+                <p>Lets us orchestrate your happily ever after</p>
+                <a href="#" class="btn btn-warning">Get Started</a>
+            </div>
+
+            <!-- Right side: Toggling images -->
+            <div class="col-md-6 image-container">
+                <img src="https://www.ptaufiqphotography.com/wp-content/uploads/2019/02/Indian-Wedding-Haldi-Sunny%E2%80%99s-World--1024x683.jpg" class="active" id="img1" alt="Image 1">
+                <img src="https://miro.medium.com/v2/resize:fit:900/1*TQpbK5lCQa8fqoaDalJFNQ.jpeg" id="img2" alt="Image 2">
+                <img src="https://images.prismic.io/memoriesdesigner/a66c70db-bd58-416d-88f5-b2640ba84b70_MD+Intro.png?auto=compress,format&rect=0,0,1500,998&w=1000&h=665" id="img3" alt="Image 3">
+                <img src="https://img.freepik.com/premium-photo/traditional-indian-wedding-aisle-with-bright-floral-garlands_1174497-71026.jpg?size=626&ext=jpg&ga=GA1.1.1819120589.1727913600&semt=ais_hybrid" id="img4" alt="Image 4">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to toggle images
+        const images = document.querySelectorAll('.image-container img');
+        let currentImageIndex = 0;
+
+        function toggleImages() {
+            // Hide the current image
+            images[currentImageIndex].classList.remove('active');
+
+            // Move to the next image
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+
+            // Show the next image
+            images[currentImageIndex].classList.add('active');
+        }
+
+        // Change images every 3 seconds
+        setInterval(toggleImages, 3000);
+    </script>
+</div>
+<div class="B">
+    <div class="container"></div>
+    <!-- Content Writing Box -->
+    <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+    <div class="content-writing-box">
+        <h1><b>About Our Team</b></h1>
+            <table>
+                
+                <tr>
+                    
+                    <th><h3>Experienced Planners</h3></th>
+                    <th><h3>Personalized Service</h3></th>
+                    <th><h3>Stress-Free Planning</h3></th>
+                    
+                </tr>
+                <tr>
+                    <td><h5>Our team of experienced
+                        <br>
+                        <br>
+                        wedding planners brings
+                        <br>
+                        <br>
+                        passion,creativity,and 
+                        <br>
+                        <br>
+                        meticulous attention to
+                        <br>
+                        <br>
+                        detail to every event.</h5>
+                    </td>
+                    <td><h5>We listen to your vision,
+                        <br>
+                        <br>
+                        understand your needs,
+                        <br>
+                        <br>
+                        and provide tailored
+                        <br>
+                        <br>
+                        services to create the 
+                        <br>
+                        <br>
+                        perfect wedding
+                        <br>
+                        <br>
+                        experience.</h5>
+                    </td>
+                    <td><h5>
+                        Relax and enjoy the 
+                        <br>
+                        <br>
+                        journey to your wedding
+                        <br>
+                        <br>
+                        day while we handle every
+                        <br>
+                        <br>
+                        aspect of the Planning
+                        <br>
+                        <br>
+                        and execution.
+                    </h5></td>
+                </h4>
+            </table>
+        
+    </div>    
+
+    </div>
+</div>
+</div>
+    </div>
+</div>
+<div class="C">
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Card with Table -->
+            <div class="col-md-6">
+                
+                    <div>
+                        <h1><b>Packages and 
+                          <br>
+                          Pricing
+                        </b></h1>
+                    </div>
+                    <br>
+                    <div class="card1">
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Package</th>
+                                    <th>Price</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Basic</td>
+                                    <td>$5,000</td>
+                                    <td>Includes consultation
+                                      <br>
+                                      ,vender selection
+                                      <br>
+                                      assistance,and 
+                                      <br>
+                                      wedding day
+                                      <br>
+                                      coordination.
+    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Premium</td>
+                                    <td>$10,000</td>
+                                    <td>Includes all 
+                                      <br>
+                                      basic services
+                                      <br>
+                                      plus full
+                                      <br>
+                                      wedding planning,
+                                      <br>
+                                      design,and decor.
+    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Ultimate</td>
+                                    <td>$15,000</td>
+                                    <td>Includes all 
+                                      <br>
+                                      premium services
+                                      <br>
+                                      plus personalized 
+                                      <br>
+                                      concierge services
+                                      <br>
+                                      and destination
+                                      <br>
+                                      wedding planning.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card with Image -->
+            <div class="col-md-6">
+                <div class="card2">
+                    
+                    <div class="card-body text-center">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/e6/ef/f3/the-bill.jpg" >
+                    </div>
+                </div>
+            </div>
+    
+    <div class="container">
+        <h1><b>Real Weddings Showcase</b></h1>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- First Card -->
+            <div class="col-md-4">
+                <div class="card3">
+                    <img src="https://signatureweds.com/wp-content/uploads/2018/03/2018-ROM-wedding-photo-studio-numb9r-Cameron-Highland-20.jpg" class="card-img-top" alt="Card Image 1">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title"><b> Rustic Garden 
+                      <br>
+                      Wedding</b></h4>
+                    <p class="card-text"><b> A romantic and intimate
+                      <br>
+                      celebration filled with
+                      <br>
+                      natural beauty.</b>
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Second Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://wp-media-partyslate.imgix.net/2022/03/photo-5179e46b-9616-4359-b6cd-2a7eeecfee0d-scaled.jpeg?auto=compress%2Cformat&fit=scale&h=840&ixlib=php-3.3.1&w=1260&wpsize=huge" class="card-img-top" alt="Card Image 2">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title"><b>Black and white
+                      <br>
+                      Glamour
+                    </b></h4>
+                    <p class="card-text"><b>A sophisticated and 
+                      <br>
+                      timeless event with a touch 
+                      <br>
+                      of Hollywood magic.
+                    </b></p>
+              
+                </div>
+                
+            </div>
+    
+            <!-- Third Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://cdn0.weddingwire.com/vendor/375479/3_2/960/jpg/img-0447_51_1974573-159250525721282.jpeg" class="card-img-top" alt="Card Image 3">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title"><b>Beachside Bliss</b></h4>
+                    <p class="card-text"><b>A carefree and romantic
+                      <br>
+                      wedding with the ocean as 
+                      <br>
+                      a backdrop.
+                    </b></p>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</div>
+</div>
+</div>
+
+<div class="D">
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Left Column for Cards -->
+            <div class="col-md-6">
+                <!-- Card 1 -->
+                <div class="card mb-4">
+                    
+                        <img src="https://checklistweddings.com/wp-content/uploads/2018/02/wedding-planners.jpeg" alt="Ivalid">
+                    
+                </div>
+    
+                <!-- Card 2 -->
+            </div>
+    
+            <!-- Right Column for Text -->
+            <div class="col-md-4 vertical-center">
+                <div>
+                    <h2><b>Wedding Planning
+                      <br>
+                      Tips and Advice</b>
+                    </h2>
+                    <ul class="square-bullets">
+                      <li><h5><b>Setting a budget</b></h5></li>
+                      <br>
+                      <li><h5><b>Creating a Timeline</b></h5></li>
+                      <br>
+    
+                      <li><h5><b>Personalizing Your Wedding</b></h></li>
+                  </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Left Column for Cards -->
+            <div class="col-md-6">
+                <!-- Card 1 -->
+                <div class="card mb-4">
+                    
+                        <img src="https://static.vecteezy.com/system/resources/previews/004/620/101/non_2x/sign-in-smartphone-page-template-mobile-app-interface-blue-design-layout-login-sign-up-screen-flat-ui-application-user-registration-authorization-phone-display-with-password-and-username-vector.jpg" alt="Ivalid">
+                    
+                </div>
+    
+                <!-- Card 2 -->
+            </div>
+    
+            <!-- Right Column for Text -->
+            <div class="col-md-4 vertical-center">
+                <div>
+                    <h2><b>Contact us</b>
+                    </h2>
+                    <br>
+                    <img src="https://i.pinimg.com/736x/c2/06/28/c20628e0966e5daaa6a8aaa3fd4a12a3.jpg"height="30px",width="30px" alt="invalid">
+                     <h4><b>Phone</b></h4>
+                     <h5>Call us to discuss your wedding vision.</h5>
+                     <br>
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXW0wXiQQiq4UL4E0xDTea5X2SySP6hMzN50xtwHKotrqejsRYcc8MnfDBenx1ciekWBg&usqp=CAU"height="30px",width="30px" alt="invalid">
+                     <h4><b>Email</b></h4>
+                     <h5>Send us a message to schedule a consultation.</h5>
+                     <br>
+                     <img src="https://w7.pngwing.com/pngs/917/85/png-transparent-computer-icons-email-address-email-address-address-miscellaneous-text-mobile-phones-thumbnail.png"height="30px",width="30px" alt="invalid">
+                     <h4><b>Address</b></h4>
+                     <h5>Visit our office for a personalized meeting.</h5>
+                     <br>
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf1xonyOPkSMu2DgFn2HK2Vsba-fPclZwIBw&s"height="30px",width="30px" alt="invalid">
+                     <h4><b>Schedule</b></h4>
+                     <h5>Book a consultation online</h5>
+                     <br>
+                     
+
+                  
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+</div>
+
+
+    
+     
+    
+
+
+
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
